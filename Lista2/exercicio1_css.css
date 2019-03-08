@@ -1,0 +1,31 @@
+Exerceicio 01
+body{
+	height:800px;
+	width:800px;
+	margin: 0 auto;
+}
+
+p{
+	height:400px;
+	width:60%;
+	border-top:20px black solid;
+	border-bottom:20px black solid;
+	border-left:20em green solid;
+	border-right:20em red solid;
+	font-size:12px;
+	letter-spacing:3;
+	word-spacing:10;
+	font-family:Verdana;
+	text-align:justify;
+	text-indent:25px;
+}
+p:first-letter{
+	font-size:36px;
+	color:blue;
+	text-decoration:overline;
+}	
+
+p:first-line{
+	text-decoration:underline;
+	text-transform:uppercase:
+}
