@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Exercicio 2</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			a:link{
+				text-decoration:none;
+				color:black;
+			}
+		</style>
+		<script ="type/javaqscript">
+			function BackAzul(){
+				document.getElementById('b1').style.backgroundColor='blue';
+				document.getElementById('a1').style.color='white';
+				document.getElementById('a2').style.color='white';
+				document.getElementById('a3').style.color='white';
+				document.getElementById('a4').style.color='white';
+			}
+			function BackAmarelo(){
+				document.getElementById('b1').style.backgroundColor='yellow';
+				document.getElementById('a1').style.color='black';
+				document.getElementById('a2').style.color='black';
+				document.getElementById('a3').style.color='black';
+				document.getElementById('a4').style.color='black';
+			}
+			function BackCinza(){
+				document.getElementById('b1').style.backgroundColor='gray';
+				document.getElementById('a1').style.color='white';
+				document.getElementById('a2').style.color='white';
+				document.getElementById('a3').style.color='white';
+				document.getElementById('a4').style.color='white';
+			}
+			function BackPreto(){
+				document.getElementById('b1').style.backgroundColor='black';
+				document.getElementById('a1').style.color='white';
+				document.getElementById('a2').style.color='white';
+				document.getElementById('a3').style.color='white';
+				document.getElementById('a4').style.color='white';
+			}
+			function Default(){
+				document.getElementById('b1').style.backgroundColor='white';
+				document.getElementById('a1').style.color='black';
+				document.getElementById('a2').style.color='black';
+				document.getElementById('a3').style.color='black';
+				document.getElementById('a4').style.color='black';
+			}
+		</script>
+	</head>
+	<body id="b1">
+		<div id="d1">
+			<a href="#" id="a1" onmouseover="BackAzul()" onmouseout="Default()">Azul</a>
+			<a href="#" id="a2" onmouseover="BackAmarelo()" onmouseout="Default()">Amarelo</a>
+			<a href="#" id="a3" onmouseover="BackCinza()" onmouseout="Default()">Cinza</a>
+			<a href="#" id="a4" onmouseover="BackPreto()" onmouseout="Default()">Preto</a>
+		</div>
+	</body>
+</html>

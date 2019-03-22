@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Exercicio 4</title>
+		<meta charset="utf-8">
+		<script>
+			function OcultarMostrar(){
+				var ocultar=document.getElementById('p1').style.display;
+				var botao=document.getElementById('b1');
+				
+				if(ocultar == 'none') {
+					botao=document.getElementById('p1').style.display = 'block';
+				}
+				else {
+					botao=document.getElementById('p1').style.display= 'none';
+				}
+				
+			}
+		</script>
+	</head>
+	<body>
+		<br><br>
+		
+		<p id="p1">	Todo Som<br>
+			Resgate<br><br>
+			
+			Aquele que sonda o meu interior<br>
+			Me conhece por dentro<br>
+			Sabe como eu sou<br>
+			Conhece os meus intentos<br>
+			E em tudo me faz viver<br>
+			Eu ouço o som da Sua voz<br>
+			Ele me faz ver<br><br>
+
+			Aquele que sonda o meu interior<br>
+			Me conhece por dentro<br>
+			Tudo aquilo que eu sou<br>
+			E nem ao Seu próprio Filho<br>
+			Poupou em meu favor<br>
+			Eu não quero mais sair<br>
+			Desse universo de amor<br><br>
+
+			A Ele todo som de todos nós<br>
+			A Ele em todo tom e toda voz<br>
+			Cantem glória
+		</p>
+		<input type="button" value="Mostrar/Ocultar" id="b1" onclick="OcultarMostrar()"></input>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Exercicio 3</title>
+		<meta charset="utf-8">
+		<script type="text/javascript">
+			function Azul(){
+				var sc=document.getElementById('slc');
+				var selecionado=sc.options[sc.selectedIndex].id;
+				
+				switch(selecionado){
+					case 'Azul':
+						document.getElementById('b1').style.backgroundColor='blue';
+						break;
+					case 'Verde':
+						document.getElementById('b1').style.backgroundColor='green';
+						break;
+					case 'Preto':
+						document.getElementById('b1').style.backgroundColor='black';
+
+						break;
+					case 'Cinza':
+						document.getElementById('b1').style.backgroundColor='gray';
+						break;	
+				}
+			}
+			
+
+		</script>
+	</head>
+	<body id="b1">
+		<label>Cor Plano de Fundo</label><br>
+		<select id="slc" value="Novack Cabaço">
+			<option value="Azul" id="Azul">Azul</option>
+			<option value="Verde" id="Verde">Verde</option>
+			<option value="Preto" id="Preto">Preto</option>
+			<option value="Cinza" id="Cinza">Cinza</option>
+		</select>
+		<input type="button" value="Alterar" onclick="Azul()"></input>
+	</body>
+</html>
