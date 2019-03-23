@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercicio 7</title>
+		<script type="text/javascript" >
+		function Inverter(){
+				var plv=document.getElementById('f1').childNodes;
+				var invert=plv.length-1;
+				var aux;
+			
+				for(i=0;i<(plv.length/2);i++){
+				console.log(i);
+					aux=plv[i].value;
+					plv[i].value=plv[invert].value;
+					plv[invert].value=aux;
+					invert--;
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Exercicio 7</h1>
+		<p>Please, coloque seu nome</p>
+		
+			<div id='f1'>
+				Nome 1:<input type='text' name='nomep1'/> <br>
+				Nome 2:<input type='text' name='nomep3'/> <br>
+				Nome 3:<input type='text' name="nomep2"/>	<br>		
+				Nome 4:<input type='text' name='nomep4'/> <br>
+				Nome 5:<input type='text' name='nomep5'/> <br>
+			</div>
+			<input type="submit" value="Submit" onclick="Inverter()"/>
+		
+	</body>
+</html>
